@@ -81,6 +81,7 @@ public class Test_Steps {
 //	    String errorMessage = driver.findElement(By.xpath("//div[@class='heading']")).getText();
 //	    System.out.println("Warning messages: "+errorMessage);
 		System.out.println("Finished");
+		driver.quit();
 //	    throw new PendingException();
 	}
 
