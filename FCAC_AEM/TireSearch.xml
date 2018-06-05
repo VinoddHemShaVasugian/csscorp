@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tires">
+  <test name="tireSearchFunnel">
+    <classes>
+      <class name="tire.search.TireSearch"/>
+      </classes>
+  </test> <!-- LoginValidation -->
+</suite> <!-- Login -->

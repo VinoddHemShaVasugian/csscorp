@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [POC]">
+  <test name="Funnels(failed)">
+    <classes>
+      <class name="funnels.Auto_FD_AlignmentSearchFunnel">
+        <methods>
+          <include name="brakeFunnel"/>
+          <include name="postConditions"/>
+          <include name="preConditions"/>
+        </methods>
+      </class> <!-- funnels.Auto_FD_AlignmentSearchFunnel -->
+      <class name="funnels.Auto_FD_TireSearchFunnel">
+        <methods>
+          <include name="tireSearchFunnel"/>
+          <include name="postConditions"/>
+          <include name="preConditions"/>
+        </methods>
+      </class> <!-- funnels.Auto_FD_TireSearchFunnel -->
+    </classes>
+  </test> <!-- Funnels(failed) -->
+</suite> <!-- Failed suite [POC] -->
