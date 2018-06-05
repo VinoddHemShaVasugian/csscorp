@@ -1,0 +1,1 @@
+{"statusCode":"BUSINESS_SERVICE_ERROR","message":"Exception Occured getAlignmentPricingByStore Method : null"}

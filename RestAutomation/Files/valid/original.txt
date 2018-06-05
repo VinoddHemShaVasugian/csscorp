@@ -1,0 +1,1 @@
+{"statusCode":"SUCCESSFUL","payload":{"alignmentPricingId":"1","standardPricing":"79.99","lifetimePricing":"169.99","standardArticle":"7009500","lifetimeArticle":"7009527","storeType":"FCAC","storeNumber":"11940","fitment":{"year":"2007","make":"Hyundai","model":"Accent","submodel":"SE","acesVehicleId":"57360","tpmsInd":"false"}}}

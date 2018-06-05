@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="library/com.sun.jersey.jersey-core-1.4.0.jar"/>
+	<classpathentry kind="lib" path="library/java-json.jar"/>
+	<classpathentry kind="lib" path="library/jdbc-oracle.jar"/>
+	<classpathentry kind="lib" path="library/jersey-client.jar"/>
+	<classpathentry kind="lib" path="library/jsonassert-1.1.1.jar"/>
+	<classpathentry kind="lib" path="library/org.apache.commons.io.jar"/>
+	<classpathentry kind="lib" path="library/poi-3.13-20150929.jar"/>
+	<classpathentry kind="lib" path="library/poi-examples-3.13-20150929.jar"/>
+	<classpathentry kind="lib" path="library/poi-excelant-3.13-20150929.jar"/>
+	<classpathentry kind="lib" path="library/poi-ooxml-3.13-20150929.jar"/>
+	<classpathentry kind="lib" path="library/poi-ooxml-schemas-3.13-20150929.jar"/>
+	<classpathentry kind="lib" path="library/poi-scratchpad-3.13-20150929.jar"/>
+	<classpathentry kind="lib" path="library/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
