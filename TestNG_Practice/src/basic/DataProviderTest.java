@@ -28,7 +28,7 @@ public class DataProviderTest {
   	{
           { "Guru99", "India" },
           { "Krishna", "UK" },
-          { "3", "test" }
+//          { "3", "test" }
      };
   }
 //  @DataProvider(name="SearchProvider")
