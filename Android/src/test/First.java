@@ -39,7 +39,7 @@ public class First {
 		// capabilities.setCapability("appActivity","com.android.calculator2.Calculator");
 		// Create RemoteWebDriver instance and connect to the Appium server
 		// It will launch the Calculator App in Android Device using the
-		// configurations specified in Desired Capabilities
+//		 configurations specified in Desired Capabilities..
 		driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"),
 				capabilities);
 	}
