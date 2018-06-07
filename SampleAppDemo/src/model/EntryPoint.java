@@ -36,7 +36,7 @@ public class EntryPoint  {
 	 */
 	public void testMain(Object[] args) throws BSROException, Exception {
 
-
+//Testing
 
 
 		boolean testMode =false;
