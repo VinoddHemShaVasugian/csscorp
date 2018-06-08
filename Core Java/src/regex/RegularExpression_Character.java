@@ -11,7 +11,7 @@ public class RegularExpression_Character {
 //		System.out.println(Pattern.matches("[abcd]", "b"));
 //		System.out.println(Pattern.matches("[^abcd]", "5"));
 //		System.out.println(Pattern.matches("[a-zA-Z]", "Z"));
-		String s="mm";
+		String s="bv";
 //		System.out.println(Pattern.matches("[a-dm-p0-5$]", s));
 		System.out.println(Pattern.matches("[amn]?", s));
 		System.out.println(Pattern.matches("[amn]+", s));

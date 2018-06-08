@@ -6,19 +6,26 @@ public class Email {
 
 	public static void main(String[] args) {
 		String email="Vinoth123@gmail.com";
-		for(int i=0;i<=email.length();i++){
-			char s=email.charAt(i);
-			
-			if(Pattern.matches("\\d", s)){
-				System.out.println("its digit");
-			}
-			if(Pattern.matches(".", s)){
-				System.out.println("its special character");
-			}
-			if(Pattern.matches("\\D", s)){
-				System.out.println("its non-digit");
-			}
-		}
+//		String regexNumber ="[0-9]";
+//		String regexAlphabet="[a-zA-Z]";
+//		String regexSpecialChar="[@.]";
+		
+		String regexNumber ="[^0-9]";
+		String regexAlphabet="[^a-zA-Z]";
+		String regexSpecialChar="[^@.]";
+		
+		Pattern pNumber=Pattern.compile(regexNumber);
+		String number=pNumber.matcher(email).replaceAll("");
+		System.out.println("Numerics from given string: "+number);
+		
+		Pattern pAlphabet = Pattern.compile(regexAlphabet);
+		String alphabet=pAlphabet.matcher(email).replaceAll("");
+		System.out.println("Alphabets from given string: "+alphabet);
+		
+		Pattern pSpecialChar = Pattern.compile(regexSpecialChar);
+		String specialChar = pSpecialChar.matcher(email).replaceAll("");
+		System.out.println("SpecialCharacters from given string: "+specialChar);
+		
 
 	}
 

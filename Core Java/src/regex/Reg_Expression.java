@@ -16,7 +16,7 @@ public class Reg_Expression {
 		System.out.println("by metacharacters ...");  
 		System.out.println(Pattern.matches("[789]{1}\\d{9}", "8853038949"));//true  
 		System.out.println(Pattern.matches("[789]{1}\\d{9}", "3853038949"));*///false (starts from 3)
-//		System.out.println(Pattern.matches("[83]{1}\\d{3}", "3855"));
-		System.out.println(Pattern.matches("[83]\\d", "3855"));
+		System.out.println(Pattern.matches("[75]{1}\\d{3}", "5758"));
+		
 	}
 }
