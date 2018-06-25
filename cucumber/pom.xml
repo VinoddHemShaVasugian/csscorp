@@ -138,7 +138,7 @@ https://mvnrepository.com/artifact/com.google.guava/guava
     <version>25.1-jre</version>
 </dependency> -->
  </dependencies>
- <!--  <dependencyManagement>
+ <dependencyManagement>
   	<dependencies>
   		<dependency>
   			<groupId>junit</groupId>
@@ -151,5 +151,5 @@ https://mvnrepository.com/artifact/com.google.guava/guava
   			<version>1.2.5</version>
   		</dependency>
   	</dependencies>
-  </dependencyManagement> -->
+  </dependencyManagement>
 </project>
