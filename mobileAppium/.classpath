@@ -19,5 +19,11 @@
 	<classpathentry kind="lib" path="jars/selenium-server-standalone-3.11.0.jar"/>
 	<classpathentry kind="lib" path="jars/java-client-5.0.3.jar"/>
 	<classpathentry kind="lib" path="jars/java-client-6.0.0-BETA4.jar"/>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

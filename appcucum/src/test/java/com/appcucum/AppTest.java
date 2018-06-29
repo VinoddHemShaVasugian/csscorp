@@ -1,38 +1,29 @@
 package com.appcucum;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import java.util.Set;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+import javax.servlet.http.Cookie;
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+class AppTest{
+	
+public static void main(String[] args){
+	System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+	WebDriver driver=new ChromeDriver();
+	driver.get("https://www.firestonecompleteautocare.com");
+	Set<org.openqa.selenium.Cookie> allCookies = driver.manage().getCookies();
+	for(org.openqa.selenium.Cookie c:allCookies){
+		System.out.println(c);
+	}
+	driver.manage().deleteAllCookies();
+	System.out.println("Getting cookies again");
+	Set<org.openqa.selenium.Cookie> againAllCookies = driver.manage().getCookies();
+	for(org.openqa.selenium.Cookie d:againAllCookies){
+		System.out.println("Retry cookies"+d);
+	}
+	System.out.println("Program End");
+	driver.quit();
+	}
 }
