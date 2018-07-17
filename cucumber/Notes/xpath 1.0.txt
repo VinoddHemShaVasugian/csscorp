@@ -1,0 +1,14 @@
+Parent (parent::node())
+//parent::*/child::td[position()=1]
+
+Child (//child::table )
+//child::tr[3]/child::td[2]
+//child::tr[position()=2]/child::td[position()>=1]
+//child::tr[position()=2]/child::td[position()>1]
+
+Sibling (//<parent xpath>/parent::<sibling xpath>/following-sibling::<similar sibling xpath>)
+//div[@class='canvas-graph']//a[@href='/selenium-tutorial.html'][i[@class='fa fa-bug']]/following-sibling::h4
+//h2[contains(text(),'A few of our most popular courses')]/parent::div//div[//a[text()='SELENIUM']]/following-sibling::div[@class='rt-grid-2 rt-omega']
+
+Ancestor (//<Actual element xpath>/ancestor::<parent of actual element xpath>/following-sibling::<similar actual element xpath>)
+//div[.//a[text()='SELENIUM']]/ancestor::div[@class='rt-grid-2 rt-omega']/following-sibling::div
