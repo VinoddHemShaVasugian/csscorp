@@ -21,33 +21,24 @@ public class CaterPiller {
 				hm.replace(a, occurance);
 			}
 		}
-		for(Integer key:hm.keySet()){
-			int value=hm.get(key);
-			System.out.println("Key: "+key+" Value: "+value);
-			
-		}
-		System.out.println("test: "+hm.values());
-		System.out.println("size: "+hm.values().size());
-//		hm.values().s
 		
-		System.out.println(hm);
+		for(Map.Entry m:hm.entrySet()){
+			System.out.println("Number: "+m.getKey()+" Occurance: "+m.getValue());
 		
-		Map<Integer, Integer> tm = new TreeMap<Integer, Integer>(hm);
-		System.out.println(tm);
-		
-		for(Integer key:tm.keySet()){
-			int value=tm.get(key);
-			System.out.println("Key: "+key+" Value: "+value);
-			
 		}
 		
-	    //pretty print a map
-//	    public static <K, V> void printMap(Map<K, V> map) {
-//	        for (Map.Entry<K, V> entry : map.entrySet()) {
-//	            System.out.println("Key : " + entry.getKey()+ " Value : " + entry.getValue());
-//	        }
-//	    }
-	    
+		System.out.println("-----------------------------");
+		
+		TreeMap<Integer, Integer> sortedMap = new TreeMap<Integer, Integer>();
+		for (Map.Entry entry : hm.entrySet()) {
+		    sortedMap.put((Integer) entry.getValue(), (Integer)entry.getKey());
+		}
+
+		for(Map.Entry m:sortedMap.entrySet()){
+			System.out.println("Occurance: "+m.getKey()+" Number: "+m.getValue());
+		
+		}
+  
 
 	}
 
