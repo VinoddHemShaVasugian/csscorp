@@ -9,7 +9,7 @@ public class CaterPiller {
 	public static void main(String[] args) {
 		int input[] = {3,1,1,2,3,2,3,1,1};
 		
-		Map<Integer,Integer> hm=new HashMap<Integer, Integer>();
+		Map<Integer,Integer> hm=new TreeMap<Integer, Integer>();
 		
 		for(int a:input){
 			if(!hm.containsKey(a)){
@@ -22,19 +22,16 @@ public class CaterPiller {
 			}
 		}
 		
-		for(Map.Entry m:hm.entrySet()){
-			System.out.println("Number: "+m.getKey()+" Occurance: "+m.getValue());
-		
-		}
-		
+		System.out.println(hm.get(1));
+	
 		System.out.println("-----------------------------");
 		
-		TreeMap<Integer, Integer> sortedMap = new TreeMap<Integer, Integer>();
-		for (Map.Entry entry : hm.entrySet()) {
-		    sortedMap.put((Integer) entry.getValue(), (Integer)entry.getKey());
-		}
+//		TreeMap<Integer, Integer> sortedMap = new TreeMap<Integer, Integer>();
+//		for (Map.Entry entry : hm.entrySet()) {
+//		    sortedMap.put((Integer) entry.getValue(), (Integer)entry.getKey());
+//		}
 
-		for(Map.Entry m:sortedMap.entrySet()){
+		for(Map.Entry m:hm.entrySet()){
 			System.out.println("Occurance: "+m.getKey()+" Number: "+m.getValue());
 		
 		}
