@@ -1,14 +1,32 @@
 Parent (parent::node())
 //parent::*/child::td[position()=1]
+//input[@id='email']/parent::*
+
+Preceding Axes:
+//input[@id='pass']/preceding::*
+
+Following Axes:
+//input[@id='email']/following::*
 
 Child (//child::table )
+//child::*
 //child::tr[3]/child::td[2]
 //child::tr[position()=2]/child::td[position()>=1]
 //child::tr[position()=2]/child::td[position()>1]
+
+Following Axes:
+//input[@id='email']/following::*
 
 Sibling (//<parent xpath>/parent::<sibling xpath>/following-sibling::<similar sibling xpath>)
 //div[@class='canvas-graph']//a[@href='/selenium-tutorial.html'][i[@class='fa fa-bug']]/following-sibling::h4
 //h2[contains(text(),'A few of our most popular courses')]/parent::div//div[//a[text()='SELENIUM']]/following-sibling::div[@class='rt-grid-2 rt-omega']
 
+Following Sibling
+//select[@id='month']/following-sibling::select
+
+Preceding Sibling
+//select[@id='year']/preceding-sibling::select
+
 Ancestor (//<Actual element xpath>/ancestor::<parent of actual element xpath>/following-sibling::<similar actual element xpath>)
 //div[.//a[text()='SELENIUM']]/ancestor::div[@class='rt-grid-2 rt-omega']/following-sibling::div
+

@@ -17,7 +17,7 @@ public class SeleniumTest
     	System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
     	WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("http://demo.guru99.com/test/guru99home/");
+/*        driver.get("http://demo.guru99.com/test/guru99home/");
         List<WebElement> sibling = driver.findElements(By.xpath("//h2[contains(text(),'A few of our most popular courses')]/parent::div//div[//a[text()='SELENIUM']]/following-sibling::div[@class='rt-grid-2 rt-omega']"));
         
         System.out.println("Using Sibling");
@@ -33,6 +33,14 @@ public class SeleniumTest
         	System.out.println(ans);
         }
         System.out.println("Login Successfully");
-        driver.quit();
+        driver.getWindowHandle();
+        driver.quit();*/
+        
+        driver.get("https://www.linkedin.com/");
+        String buttonColor = driver.findElement(By.xpath("//input[@id='registration-submit']")).getCssValue("background-color");
+        String buttonTextColor = driver.findElement(By.xpath("//input[@id='registration-submit']")).getCssValue("color");
+        System.out.println("Button color: " + buttonColor);
+        System.out.println("Text color " + buttonTextColor);
+        
     }
 }

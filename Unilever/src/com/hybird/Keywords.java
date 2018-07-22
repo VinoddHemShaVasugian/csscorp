@@ -67,7 +67,7 @@ public class Keywords {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--disable-extensions");
 //			options.addArguments("--test-type");
-			// options.addArguments("--fast");
+//			options.addArguments("--fast");
 			WD = new ChromeDriver(options);
 //			WD = new ChromeDriver();
 		} else if (browser.equals("IE")) {

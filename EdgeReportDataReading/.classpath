@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Users/css108917/.m2/repository/com/amazonaws/aws-java-sdk-core/1.11.177/aws-java-sdk-core-1.11.177.jar"/>
+	<classpathentry kind="lib" path="C:/Users/css108917/.m2/repository/com/amazonaws/aws-java-sdk-dynamodb/1.11.177/aws-java-sdk-dynamodb-1.11.177.jar" sourcepath="C:/Users/css108917/.m2/repository/com/amazonaws/aws-java-sdk-dynamodb/1.11.177/aws-java-sdk-dynamodb-1.11.177-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/css108917/.m2/repository/com/amazonaws/jmespath-java/1.11.177/jmespath-java-1.11.177.jar"/>
+	<classpathentry kind="lib" path="C:/Users/css108917/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/css108917/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.7/jackson-core-2.6.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/css108917/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.6.7.1/jackson-databind-2.6.7.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/css108917/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.7/jackson-dataformat-cbor-2.6.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/css108917/.m2/repository/joda-time/joda-time/2.8.1/joda-time-2.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/css108917/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/css108917/.m2/repository/org/apache/httpcomponents/httpclient/4.5.1/httpclient-4.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/css108917/.m2/repository/org/apache/httpcomponents/httpcore/4.4.3/httpcore-4.4.3.jar"/>
+	<classpathentry kind="lib" path="D:/Downloads/commons-logging-1.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
