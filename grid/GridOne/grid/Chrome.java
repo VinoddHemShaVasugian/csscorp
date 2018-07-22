@@ -34,6 +34,7 @@ public class Chrome {
 		driver.findElement(By.xpath("//a[text()='தமிழ்']")).click();
 		System.out.println("Chrome - Element clicked");
 //		 driver.close();
-		System.out.println("Chrome - browser quit");
+		System.out.println("Chrome - browser quit completed");
+		
 	}
 }
