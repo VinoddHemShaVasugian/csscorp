@@ -8,6 +8,11 @@
           <include name="firefoxExecution"/>
         </methods>
       </class> <!-- grid.Firefox -->
+      <class name="grid.Chrome">
+        <methods>
+          <include name="chromeExecution"/>
+        </methods>
+      </class> <!-- grid.Chrome -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

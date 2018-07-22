@@ -17,19 +17,21 @@ public class Firefox {
 	public static String Node1 = "http://10.50.35.8:4444/wd/hub";
 	@Test
 	public void firefoxExecution() throws MalformedURLException {
+//		System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
 		DesiredCapabilities cap = DesiredCapabilities.firefox();
 		cap.setBrowserName("firefox");
 		cap.setPlatform(Platform.WINDOWS);
+		System.out.println("FF - DesiredCapabilities done");
 
-		System.out.println("DesiredCapabilities done");
 		driver = new RemoteWebDriver(new URL(Node1), cap);
-		System.out.println("Connection established");
+		System.out.println("FF - Connection established");
+
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(URL);
-		System.out.println("URL launched");
+		System.out.println("FF - URL launched");
 		driver.findElement(By.xpath("//a[text()='Gmail']")).click();
-		System.out.println("Element clicked");
-//		 driver.quit();
-		System.out.println("browser quit");
+		System.out.println("FF - Element clicked");
+//		 driver.close();
+		System.out.println("FF - browser quit");
 	}
 }
