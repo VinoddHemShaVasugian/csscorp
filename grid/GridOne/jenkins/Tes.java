@@ -1,4 +1,4 @@
-package grid;
+package jenkins;
 
 import java.net.MalformedURLException;
 import java.net.URL;

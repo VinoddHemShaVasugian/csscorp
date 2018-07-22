@@ -1,0 +1,29 @@
+Register Hub:
+java -jar selenium-server-standalone-3.13.0.jar -role hub
+To change port: java -jar selenium-server-standalone-3.13.0.jar -port 4455 -role hub
+
+Register Node:
+solution 1: java -jar selenium-server-standalone-3.13.0.jar -role node -hub http://10.50.35.8:4444/grid/register -port 5555
+
+solution 2:
+java -Dwebdriver.gecko.driver="D:\Automation\CSSCORP\csscorp\grid\Drivers\geckodriver.exe" -jar selenium-server-standalone-3.13.0.jar -role webdriver -hub http://10.50.35.8:4444/grid/register -port 1000
+
+java -Dwebdriver.chrome.driver="D:\Automation\CSSCORP\csscorp\grid\Drivers\chromedriver.exe" -jar selenium-server-standalone-3.13.0.jar -role webdriver -hub http://10.50.35.8:4444/grid/register -port 1001
+
+
+
+
+*************************************************************************************************************************
+http://10.50.35.8:1
+
+java -jar selenium-server-standalone-3.13.0.jar -role node -hub http://10.50.35.8:1/grid/register -port 5555
+
+-Dwebdriver.chrome.driver=D:\Automation\CSSCORP\csscorp\grid\Drivers\geckodriver.exe
+
+ thread-count="6"
+ 
+2 requests waiting for a slot to be free.
+
+    Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+    Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+

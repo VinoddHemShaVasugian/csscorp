@@ -1,0 +1,7 @@
+First, make a new repository on Github with your project name.Then follow the below steps..
+
+1)git init
+2)git add *
+3)git commit -m "first commit"
+4)git remote add origin https://github.com/VinoddShaVasugian/cmdPractice
+5)git push -u origin master
